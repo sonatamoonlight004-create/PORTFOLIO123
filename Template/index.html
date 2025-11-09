@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="app.js"></script>
+    <title>Gumilan's Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Personal Portfolio</a>
+
+        <nav>
+            <a href="#home" > Home</a>
+            <a href="#about" >About</a>
+            <a href="#skills" >Skills</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="among_us_live_wallpaper(1080p).mp4" type="video/mp4">
+        </video>
+
+        <div class="about-image">
+          <img src="/static/images/profilepic2.jpg" alt="akong face" width="400" height="400">
+        </div>
+
+        <div class="greetings">
+          <h1 class="greet">HELLO</h1>
+              <h3>My Name is Edcel Ginrick D. Gumilan</h3>
+          <p>I' am a 1st Year College of BSIT Student at ACES Polytechnic College Inc.</p>
+          <h5>BSIT-1B</h5>
+          <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+    
+        <div class="about-image2">
+            <img src="/static/images/profilepic2.jpg" alt="akong face" width="400" height="400" class="imageReveal">
+          </div>
+        
+          <div class="describe-about-me autoShow">
+             <h1 class="about-me">About me</h1>
+               <p>My name is Edcel Ginrick D. Gumilan, and I am 18 years old.
+                  I am currently a first-year college student taking up the Bachelor of Science in Information Technology (BSIT) program at ACES Polytechnic College Inc.
+                  My skills focus on programming, particularly in Java, HTML, and CSS.
+                  I live in Monica Homes Subdivision, New Visayas, Panabo City.
+                  In my free time, I enjoy playing games and watching anime. At present, I am single.</p>
+          </div>   
+    </section>
+
+    <section id="skills" class="skills">
+
+        <h2 class="header autoShow"><span>My Skills</span></h2>
+
+          <div class="card-container autoShow">
+            <div class="card">
+                <div class="card-background" style="background-image: url(/static/images/java2.jpg);"></div>
+                <div class="content">
+                    <h3 class="card-heading">JAVA</h3>
+                    <div class="card-category">MY SKILLS</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(/static/images/html2.jpg);"></div>
+                <div class="content">
+                    <h3 class="card-heading">HTML</h3>
+                    <div class="card-category">My Skills</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(/static/images/css2.jpg);"></div>
+                <div class="content">
+                    <h3 class="card-heading">CSS</h3>
+                    <div class="card-category">My Skills</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(/static/images/python.jpg);"></div>
+                <div class="content">
+                    <h3 class="card-heading">PYTHON</h3>
+                    <div class="card-category">My Skills</div>
+                </div>
+            </div>
+         </div>       
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container autoShow">
+              <h2 class="mycontact">Contact Us</h2>
+           <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea type="message" id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
